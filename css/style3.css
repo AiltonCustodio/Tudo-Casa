@@ -10,7 +10,7 @@ body{
 }
 
 h1, h2, h3, h4, h5{
-    color: #fff;
+    color: rgb(238, 13, 13);
 }
 p, label{
     color: #444;
