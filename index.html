@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Casa</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <img src="img/house-g4aae1a8b2_1280.png" alt="">
+            <div class="cabeca">
+                <h1>TUDO CASA - Venda - Compre - Alugue</h1>
+                <h3>Sem Dor de Cabeça</h3>
+            </div>
+        </div>
+        <div class="formulario">
+            <div class="cabec-form">
+                <p>FORMULÁRIO DE CADASTRO</p>
+            </div>
+            <div class="corpo-form">
+                <p>Descreva as características do imovel:</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do Anuncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Um título para anunciar seu imovel." minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="finalidade">Finalidade:<span class="required-field">*</span></label>
+                        <select name="finalidade" class="block">
+                            <option value="">Selecione uma opção</option>
+                            <option value="Aluguel">Aluguel</option>
+                            <option value="Compra">Compra</option>
+                            <option value="Venda">Venda</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço:<span class="required-field">*</span></label>
+                        <input type="number" name="price" id="title" class="block" placeholder="Defina o preço."required>
+                    </div>
+                    <div>
+                        <label for="description">Descrição: <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block" placeholder="Aqui voce descreve os detelhes do veículo, por exemplo: se ele tem algum arranhão."></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="endereco">Endereço: <span class="required-field">*</span></label>
+                        <input type="text" name="endereco" id="endereco"class="block" placeholder="Digite o endereço do imóvel." required>
+                    </div>
+                    <div class="box-input">
+                        <label for="Cidade">Cidade: <span class="required-field">*</span></label>
+                        <input type="text" name="cidade" id="cidade"class="block" placeholder="Digite a cidade." required>
+                    </div>
+                    <div class="box-input">
+                        <label for="cep">CEP.: <span class="required-field">*</span></label>
+                        <input type="number" name="cep" id="cep" class="block" placeholder="Digite o CEP." required>
+                    </div>
+                    <div class="box-input">
+                        <div class="est">
+                            <label for="uf">UF: <span class="required-field">*</span></label>
+                            <input type="text" name="uf" list="uf" maxlength="2" minlength="2" class="list-uf" placeholder="Estado">
+                            <datalist id="uf">
+                                <option value="AC"></option>
+                                <option value="AL"></option>
+                                <option value="BA"></option>
+                                <option value="CE"></option>
+                                <option value="ES"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="box-input">
+                        <p>Aceita Financiamento?<span class="required-field">*</span></p>
+                        <input type="radio" name="financ" id="sim">
+                        <label for="sim">SIM</label>
+                        <input type="radio" name="financ" id="nao">
+                        <label for="nao">NÃO</label>
+                    </div>
+                    <fieldset>
+                        <legend>Opcionais:</legend>
+                        <div class="optional-box">
+                            <p>Quartos</p>                               
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" value="02" name="optional[]">
+                                    <label for="check">2-Dois</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="03" name="optional[]">
+                                    <label for="check">3-Três</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="04" name="optional[]">
+                                    <label for="check">4-Quatro</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="mais" name="optional[]">
+                                    <label for="check">Mais ...</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="optional-box">
+                            <p>Banheiros</p>
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" value="01" name="optional[]">
+                                    <label for="check">01-Um</label><br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="02" name="optional[]">
+                                    <label for="check">02-Dois</label><br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="03" name="optional[]">
+                                    <label for="check">03-Três</label>
+                                </li>
+                                <input type="checkbox" value="mais" name="optional[]">
+                                <label for="check">Mais...</label>
+                            </ul>
+                        </div>
+                        <div class="optional-box">
+                            <p>Vagas</p>
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" value="00" name="optional[]">
+                                    <label for="check">Sem Garagem</label><br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="01" name="optional[]">
+                                    <label for="check">01-Vaga</label><br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" value="02" name="optional[]">
+                                    <label for="check">02-Vagas</label>
+                                </li>
+                                <input type="checkbox" value="varias" name="optional[]">
+                                <label for="check">Livre</label>
+                            </ul>
+                        </div>
+                    </fieldset>
+                    <div class="box-input">
+                        <p>Fotos do Imovel: <span class="required-field">*</span></p>
+                        <input type="file" name="images" id="images" multiple accept="image/png, image/jpg" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

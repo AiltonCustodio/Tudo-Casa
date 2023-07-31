@@ -1,0 +1,147 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: rgba(216, 225, 245, 0.835);
+}
+
+h1, h2, h3, h4, h5{
+    color: #fff;
+}
+p, label{
+    color: #444;
+}
+input, select{
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px;
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea{
+    width: 400px;
+}
+
+textarea{
+    margin: 15px 0 25px 0;
+    padding: 10px 5px;
+}
+
+/* topo da pagina principal */
+.cabecalho{
+    background-image:url(../img/banner-2.jpg);
+    /* background-image:url(../img/banner-g2acace7f6_1280.jpg); */
+    padding: 15px 5px;
+    margin: 0px;
+    height: 150px;
+    width: 100%;
+    color: #fff;
+    box-shadow: rgb(52, 51, 51) 0px 1px 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.cabecalho img{
+    height: 170px;
+    position: absolute; 
+    top: 3px;
+}
+
+.cabeca{
+    position: absolute;
+    text-align: center;
+    top: 45px;
+    left: 25%;
+    text-shadow: rgb(52, 51, 51) 0px 1px 5px;
+}
+.block{
+    display: block;
+}
+
+/* cabecalho do formulario */
+
+.cabec-form{
+    border-bottom: 1px solid #ccc9ed; 
+    height: 45px;
+ }
+ 
+ .cabec-form p{
+     color: #110426;
+     border-bottom: 2px solid #110426;
+     width: 200px;
+     text-align: center;
+     margin: 0px auto;
+     text-transform: uppercase;
+     height: 45px;
+     line-height: 45px;
+ }
+
+.formulario{
+    background-color: #fdfdfe;
+    width: 55%;
+    margin: 0px auto;
+    position: relative;
+    top: -62px;
+    box-shadow: rgb(52, 51, 51) 0px 1px 5px;
+}
+
+.corpo-form{
+    padding: 30px;
+}
+
+.box-input{
+    margin-bottom: 35px;
+}
+
+.box-input p{
+    margin-bottom: 15px;
+}
+
+.box-input input[type="radio"]{
+    margin-left: 20px;
+}
+.est input{
+    display: block;
+    width: 60px;
+}
+.required-field{
+    color: #d80835;
+}
+fieldset{
+    background-color: #e9ecf2;
+    margin-bottom: 15px;
+}
+
+.optional-box{
+    display: inline-block; 
+    margin: 0 80px 5px 20px;
+}
+
+.optional-box p{
+    font-style:italic;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.optional-list li{
+    list-style:none;
+    margin-bottom: 5px;
+}
+.btn-submit{
+    background-color: #025a86;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-submit:hover{
+    background-color: #fff;
+    border-color: #025a86;
+    color: #025a86;
+}
