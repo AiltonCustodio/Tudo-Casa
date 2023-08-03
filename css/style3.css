@@ -33,35 +33,40 @@ textarea{
 /* topo da pagina principal */
 .cabecalho{
     background-image:url(../img/banner-2.jpg);
-    /* background-image:url(../img/banner-g2acace7f6_1280.jpg); */
     padding: 15px 5px;
     margin: 0px;
     height: 150px;
     width: 100%;
     color: #fff;
     box-shadow: rgb(52, 51, 51) 0px 1px 5px;
-    display: inline-block;
-    position: relative;
+    display: flex;
 }
 
 .cabecalho img{
-    height: 170px;
-    position: absolute; 
-    top: 3px;
+    height: 150px;
+    width: auto;
 }
 
-.cabeca{
-    position: absolute;
+.cabecalho-titulos{
+    width: 95%;
+    margin:20px 25px 0 0;
     text-align: center;
-    top: 45px;
-    left: 25%;
-    text-shadow: rgb(52, 51, 51) 0px 1px 5px;
 }
+
 .block{
     display: block;
 }
 
 /* cabecalho do formulario */
+
+.formulario{
+    background-color: #fdfdfe;
+    width: 55%;
+    margin: 0 50px 0 350px;
+    position: relative;
+    top: -50px;
+    box-shadow: rgb(52, 51, 51) 0px 1px 5px;
+}
 
 .cabec-form{
     border-bottom: 1px solid #ccc9ed; 
@@ -78,15 +83,6 @@ textarea{
      height: 45px;
      line-height: 45px;
  }
-
-.formulario{
-    background-color: #fdfdfe;
-    width: 55%;
-    margin: 0px auto;
-    position: relative;
-    top: -62px;
-    box-shadow: rgb(52, 51, 51) 0px 1px 5px;
-}
 
 .corpo-form{
     padding: 30px;
@@ -117,7 +113,7 @@ fieldset{
 
 .optional-box{
     display: inline-block; 
-    margin: 0 80px 5px 20px;
+    margin: 0 auto 5px 20px;
 }
 
 .optional-box p{
@@ -138,10 +134,41 @@ fieldset{
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 .btn-submit:hover{
     background-color: #fff;
     border-color: #025a86;
     color: #025a86;
+}
+
+/* responsividade */
+
+/* Celilar 325px */
+@media (max-width:325px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .cabecalho{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .cabecalho img{
+        max-height: 40px;
+        width: auto;
+        margin: 5px;
+        display: inline-block;
+    }
+    .cabeca{
+        display: inline-block
+    }
+    .cabeca h1{
+        font-size: 1rem;
+    }
+
+
 }
