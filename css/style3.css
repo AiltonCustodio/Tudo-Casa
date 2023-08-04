@@ -242,8 +242,10 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-
 X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X--X-X-X-X-X-X
  */
 
-/* Celilar 425px */
-@media (max-width:425px) {
+/* Celilar 425px / 375px */
+@media (max-width:425px),
+@media (max-width:375px) 
+{
 
     html,
     body {
@@ -268,7 +270,7 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X--X-X-X-X-X-X
 
     .cabecalho-titulos {
         margin: 5% 0;
-        text-align: center;
+        text-align: left;
         font-size: 10px;
     }
 
