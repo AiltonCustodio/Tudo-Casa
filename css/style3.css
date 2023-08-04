@@ -172,7 +172,7 @@ fieldset {
 /* responsividade */
 
 /* Celilar 320px */
-@media (max-width:320px) {
+@media (max-width:309px) {
 
     html,
     body {
@@ -187,18 +187,22 @@ fieldset {
 
     .cabecalho h3 {
         margin-top: 5px;
+        text-align: center;
     }
 
     .cabecalho-img img {
         max-height: 60px;
         width: auto;
-        margin: 20% 0;
+        margin: 5px 0 5px 0;
     }
 
     .cabecalho-titulos {
-        margin: 8% 0;
+        padding: 10px 10px 10px 0;
+    }
+
+    .cabecalho-titulos h1{
+        font-size: 15px;
         text-align: center;
-        font-size: 10px;
     }
 
     /* formulario */
