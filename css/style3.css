@@ -318,3 +318,77 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X--X-X-X-X-X-X
         margin: 0 auto;
     }
 }
+
+/*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*/
+
+/* LANDSCAPE */
+@media screen and (orientation: landscape) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* topo da pagina*/
+    .cabecalho {
+        height:10px;
+        width: 55%;
+    }
+
+    .cabecalho h3 {
+        margin-top: 5px;
+    }
+
+    .cabecalho-img img {
+        max-height: 75px;
+        width: auto;
+        margin: 11% 0;
+    }
+
+    .cabecalho-titulos {
+        margin: 5% 0;
+        /* padding-right: 55px; */
+        text-align: left;
+        font-size: 10px;
+    }
+
+    /* formulario */
+
+    .formulario {
+        width: 50%;
+        margin: 0;
+        top: 5px;
+    }
+    
+    .cabec-form p {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .box-input {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="file"],
+    textarea {
+        width: 95%;
+    }
+
+    textarea {
+        margin: 15px 0 25px 0;
+        padding: 5px 5px;
+        height: 50px;
+    }
+    .btn-submit {
+        width: 100px;
+        height: 35px;
+    }
+    input[type="submit"]{
+        display: block;
+        margin: 0 auto;
+    }
+}
