@@ -209,6 +209,11 @@ fieldset {
         top: 2px;
     }
 
+    .cabec-form p {
+        width: 200px;
+        font-size: 10px;
+    }
+
     .box-input {
         margin-bottom: 15px;
     }
@@ -244,7 +249,7 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X--X-X-X-X-X-X
 
 /* Celilar 425px / 365px */
 /* @media (max-width:425px), */
-@media (max-width:365px) 
+@media (max-width:375px) 
 {
     html,
     body {
@@ -280,6 +285,11 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X--X-X-X-X-X-X
         width: 98%;
         margin: 0;
         top: 2px;
+    }
+    
+    .cabec-form p {
+        width: 200px;
+        font-size: 15px;
     }
 
     .box-input {
