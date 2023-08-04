@@ -323,8 +323,10 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X--X-X-X-X-X-X
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 */
 
-/* LANDSCAPE */
-@media screen and (orientation: landscape) {
+/* Celilar 425px / 365px */
+/* @media (max-width:425px), */
+@media (max-width:720px) 
+{
     html,
     body {
         overflow-x: hidden;
@@ -332,12 +334,13 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X--X-X-X-X-X-X
 
     /* topo da pagina*/
     .cabecalho {
-        height:10px;
-        width: 55%;
+        height: 110px;
+        width: 99%;
     }
 
     .cabecalho h3 {
         margin-top: 5px;
+        font-size: 17px;
     }
 
     .cabecalho-img img {
@@ -349,16 +352,16 @@ X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X--X-X-X-X-X-X
     .cabecalho-titulos {
         margin: 5% 0;
         /* padding-right: 55px; */
-        text-align: left;
-        font-size: 10px;
+        text-align: center;
+        font-size: 12px;
     }
 
     /* formulario */
 
     .formulario {
-        width: 50%;
+        width: 100%;
         margin: 0;
-        top: 5px;
+        top: 2px;
     }
     
     .cabec-form p {
